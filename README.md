@@ -40,6 +40,7 @@ func save():
     return save_dict
    
    2.Call save_game and load_game in any where:
+
    var save=SAVE.new()
    save.save_game()
    ＃or
