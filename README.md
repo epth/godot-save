@@ -5,6 +5,7 @@ How to Use:
 
 1-1.If you just want to load data to exists node,you should add code to which node want to save:
 
+```gdscript
 func save():
 	var save_dict = {
 		'method_type' : SAVE.METHOD_TYPE.MODIFY,
@@ -12,9 +13,11 @@ func save():
 		'value':value,
 	}
 	return save_dict
+```
   
  1-2.If you want to totaly replace node while loading data,should add code to which node want to save:
  
+ ```gdscript
  func save():
     var save_dict = {
         'method_type' : SAVE.METHOD_TYPE.INSTANCE,
@@ -38,14 +41,17 @@ func save():
         "last_attack" : last_attack
     }
     return save_dict
-   
+```
+
    2.Call save_game and load_game in any where:
+
+```gdscript
 
    var save=SAVE.new()
    save.save_game()
    ＃or
    save.load_game()
-   
+```
 
 
 Refrence:
